@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/Primary">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="270dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Create an Account"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:fontFamily="@font/poppinsbold"/>
+
+    <EditText
+        android:id="@+id/etUsernameRegis"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_card"
+        android:hint="Username"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"
+        android:textColorHint="#505050" />
+
+    <EditText
+        android:id="@+id/etPasswordRegis"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/round_card"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#505050" />
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:inputType="textPassword"
+        android:background="@drawable/round_card"
+        android:hint="Confirm Password"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/black"
+        android:textColorHint="#505050"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/regisButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinssemibold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/regisText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Already have an account?"
+            android:textColor="@color/white"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/LoginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Login"
+            android:textColor="@color/color2"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

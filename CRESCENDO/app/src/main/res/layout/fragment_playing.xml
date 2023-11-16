@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.PlayingFragment">
+
+    <RelativeLayout
+        android:id="@+id/card_playing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:clickable="true"
+        android:background="@color/Primary">
+
+        <ImageView
+            android:id="@+id/image_playing"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/song1" />
+
+        <ImageView
+            android:id="@+id/skip_playing"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_next"
+            android:contentDescription="TODO" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/playpause_playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/skip_playing"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            app:fabSize="mini"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_play"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/prev_playing"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toStartOf="@+id/playpause_playing"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_previous"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/title_playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image_playing"
+            android:layout_toStartOf="@+id/prev_playing"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Believer"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppinsregular"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/artist_playing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image_playing"
+            android:layout_toStartOf="@+id/prev_playing"
+            android:layout_below="@+id/title_playing"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="Imagine Dragons"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppinsregular"
+            android:maxLines="1"/>
+    </RelativeLayout>
+
+</LinearLayout>
